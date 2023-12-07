@@ -2,69 +2,239 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Gie Gie Transport Pvt Ltd</title>
-
+	<title>Gigi Transport Hire</title>
+	<meta name="description" content="Gigi Transport Hire">
+	<meta name="keywords" content="Gigi transport, transport hire, truck for hire, cross border transport, closed trucks for hire,">
 	<style type="text/css">
-			#main-head{
+		*{
+			padding: 0;
+			margin: 0;
+			text-decoration: none;
+			list-style: none;
+			box-sizing: border-box;
+		}
+		nav{
+			background: black;
+			height: 80px;
+			width: 100%;
+		}
+		#main-head{
+			font-size: 30px;
+			color: white;
+			line-height: 80px;
+			background-size: cover;
+			display: inline-block;
+			margin-bottom: 0px;
+			text-align: float left;
+			margin-right: 20px;
+
+
+		}
+		nav ul{
+			float: right;
+			margin-right: 20px;
+
+		}
+		nav ul li{
+			display: inline-block;
+			line-height: 80px;
+			margin: 0 5px;
+			position: relative;
+
+		}
+		nav ul li a{
+			color: white;
+			font-size: 20px;
+			text-transform: uppercase;
+			padding: 7px 13px;
+			border-radius: 3px;
+			display: inline-block;
+					
+			}
+			a.active,a:hover{
 				color: white;
-				font-family: cursive;
-				font-size: 35px;
-				background-color: skyblue;
-				text-align: center;
+				transition: 0.15s;
 				
 
 			}
-			#main-body{
-				background-image: url(images/a.jpg);
+			.checkbtn{
+				font-size: 30px;
+				color: white;
+				float: right;
+				line-height: 80px;
+				margin-right: 40px;
+				cursor: pointer;
+				display: none;
+			}
+			#check{
+				display: none;
+			}
+			
+			nav ul li a:hover{
+				color: white;
+				display: inline-block;
+				background-color: green;
+				padding: 5px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				transition: 0.15s;
+				opacity: 0.5;
+			}
+			#body-main{
+				background-image: url(images/bi.jpeg);
 				background-size: cover;
-
 			}
-			#about{
-				background-color: blue;
+			#tribe{
 				color: white;
-				font-size: 20px;
+				margin-right: 10px;
 			}
-			#contacts{
-					background-color: blue;
-					color: white;
-					font-size: 20px;
+			#facebook{
+				width: 20px;
+				border-radius: 7px;
+				margin-right: 10px;
 			}
-			#services{
-				background-color: blue;
-				color: white;
-				font-size: 20px;
+			#instagram{
+				width: 20px;
+				border-radius: 5px;
 			}
-			#about:hover{
-				opacity: 0.7;
-				color: red;
-				background-color: green;
+			#tribe:hover{
+				color: blue;
+				background-color: white;
+				cursor: pointer;
+			}
+		
+		a:hover{
+			color: red;
+			background-color: green,
+			cursor: pointer;
+			opacity: 0.6;
+			transition: 0.17s;
+		}
+		#container{
+			width: 100%;
+			min-height: 100vh;
+			padding: 5%;
+			background-image: url(images/search);
+			background-position: center;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.slider-frame{
+		overflow: hidden;
+		width: 800px;
+		margin-left: 400px;
+		margin-top: 20px;
+		height: 700px;
+		margin-left: 360px;
+		margin-top: 20px;
 
-			}
-			#contacts:hover{
-				opacity: 0.7;
-				color: red;
-				background-color: green;
-			}
-			#services:hover{
-					opacity: 0.7;
-				color: red;
-				background-color: green;
-			}
+	}
+	#j{
+		width: 800px;
+		border-radius: 5px;
+	}
+	#k{
+		width: 800px;
+		border-radius: 5px;
+	}
+	#l{
+		width: 800px;
+		border-radius: 5px;
+	}
+
+	@-webkit-keyframes slide_animation{
+		0% {left:0px;}
+		10% {left:0px;}
+		20% {left:800px;}
+		30% {left:800px;}
+		40% {left:1600px;}
+		50% {left:1600px;}
+		60% {left:800px;}
+		70% {left:800px;}
+		80% {left:0px;}	
+		90% {left:0px;}
+		100% {left:0px;}
+		
+	}
+	.slide-images{
+		width: 800px;
+		margin: 0 0 0 -800px;
+		position: relative;
+		-webkit-animation-name: slide_animation;
+		-webkit-animation-duration: 20s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-play-state: running;
+	}
+	.image-container{
+		width: 900px;
+		position: relative;
+		float: left;
+		height: 800px;
+	}
+	.fit-screen{
+		height: 100dvh;
+		
+	}	
+	h5{ color: white;
+	font-size: 20px; 
+}
+#chain{
+	width: 100px;
+	border-radius: 50px;
+	display: inline-block;
+	
+
+
+}
 	</style>
+	<link rel="stylesheet" type="text/css" href="http://kit.fontawesome.com/a076d05399">
 </head>
-<body id="main-body">
-	<h1 id="main-head">Gie Gie Transport Hire Pvt Ltd</h1>
+
+<br>
+<body id="body-main">
+	<div class="fit-screen">
+	 <img id="chain" src="images/bi.jpeg"><h1 id="main-head"> Gigi Pound Transport Hire </h1>
 	<br>
-	<hr>
-	<br>
-	<br>
-	<a id="about" href="details.html">About Us</a>
-	<a id="contacts" href="contacts.html">Contacts</a>
-	<a id="services" href="details.html">Services</a>
+	<nav>
+<h5>Gigi Transport Hire +263 77 329 2777</h5>
+		
+	<a href="https://web.facebook.com/profile.php?id=100093553671111"><img id="facebook" src="images/facebook.jpg" target="_blank"></a>
+	<ul>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href="details.html">About Us</a></li>
+		<li><a href="contacts.html">Contacts</a></li>
+	</ul>
+	</nav>
 	<br>
 	<br>
 
+	<div class="slider-frame">
+	<div class="slide-images">
+		
+			
+			<div class="img-container">
+				<img  src="images/a.jpg">
+				
+			</div>
+
+			<div class="img-container">
+				<img  src="">
+				
+			</div>
+			
+	</div>
+</div>
+	
+</div>
+	<br>
+	<br>
+
+	<br>
+	<br> 
+	
+	<br>
 </body>
 </html>
